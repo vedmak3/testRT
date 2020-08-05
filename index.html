@@ -1,0 +1,57 @@
+<html>
+    <head>
+            <script src="api.js"></script>
+            <meta charset="utf-8"/>
+        <style>
+
+/****************************************************************************************************/
+/*** Стили относящиеся к модальному окну и содержанию ***/
+.popup h2{
+color: #000000;
+text-shadow: 0 1px 3px rgba(0,0,0,.3);
+font-weight: normal;
+font-size: 1.5em;
+}
+
+.popup {
+top: 0%;
+right:35%;
+display: none;
+z-index: 1000;
+margin: 0 auto;
+position: fixed;
+padding: 15px;
+border: 1px solid #383838;
+border-radius: 4px;
+background-color: #FFFFFF;
+}
+/* формируем кнопку закрытия */
+.close {
+cursor: pointer;
+position: absolute;
+padding: 0;
+top: 0px;
+right: 0px;
+width: 22px;
+height: 22px;
+border: 2px solid rgb(0, 0, 0);
+text-align: center;
+text-decoration: none;
+font-weight: bold;
+line-height: 20px;
+}
+tr:hover {
+    background: #2327e6; /* Цвет фона при наведении */
+    color: #fff; /* Цвет текста при наведении */
+   }
+.iks{
+    text-align: center
+}
+/****************************************************************************************************/
+        </style>
+    </head>
+    <body>
+        <div class="popup"></div>
+        <div id="pole"></div>
+    </body>
+</html>
